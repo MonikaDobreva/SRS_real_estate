@@ -1,0 +1,115 @@
+\documentclass[12pt]{article}
+\usepackage[bottom=1in]{geometry}
+\geometry{a4paper}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{
+    Software Requirements Specification \\ Real Estate Valuation System\\[1ex] % Title
+    \author{Monika Dobreva\\Student Number: 2945533}
+    \date{Internship Period: February 2024 - June 2024 \\ \small word count: 533 \\} 
+    \large Genzai B.V.\\ % Company Name
+    \large Fontys University of Applied Sciences, Venlo\\03.03.2024 % University Name
+}
+
+\begin{document}
+\setcounter{page}{1}
+\pagenumbering{roman}
+
+\maketitle
+\thispagestyle{empty}
+\newpage 
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+The purpose of this Software Requirements Specification (SRS) document is to provide a detailed overview of the Real Estate Valuation System being developed by Genzai B.V. This document will cover the system's intended features, functionalities, and interactions with users and other systems.
+
+\subsection{Intended Audience}
+This document is intended for stakeholders of the Real Estate Valuation System project, including the development team, project managers, marketing staff, testers, and documentation writers. It is recommended that readers familiarize themselves with the project overview before delving into the specific requirements detailed in this document.
+
+\subsection{Project Scope}
+The Real Estate Valuation System is designed to provide advanced real estate valuation services, utilizing AI and data analytics to offer precise valuations for commercial properties. The system will cater to municipal bodies, real estate professionals, and other stakeholders requiring accurate real estate assessments.
+
+\subsubsection{Product Features}
+\begin{itemize}
+    \item Data aggregation from various sources, including web scraping and APIs.
+    \item AI-driven valuation models for commercial real estate.
+    \item User interface for accessing valuation results and inputting data.
+    \item A backend system to process and store data.
+    \item Reporting and analytics tools for data visualization and insights.
+\end{itemize}
+
+\subsubsection{User Characteristics}
+More concrete user groups and personas are to be determined. Currently the following have been identified:
+\begin{itemize}
+    \item Municipalities: Require accurate valuations for taxation purposes.
+    \item Real Estate Professionals: Seek precise valuations for buying, selling, and investment decisions.
+    \item Data Scientists and Analysts: Need access to raw data and analytics tools for further analysis.
+\end{itemize}
+
+\subsection{Design and Implementation Constraints}
+\begin{itemize}
+    \item The AI models must be capable of handling large datasets with high accuracy.
+    \item The user interface must be intuitive and user-friendly.
+\end{itemize}
+
+\subsection{Assumptions and Dependencies}
+It is assumed that the system will have continuous access to up-to-date real estate data from reliable sources. The system's performance is dependent on the accuracy and completeness of this data.
+
+\newpage
+
+\section{Specific Requirements}
+The specific requirements per separate functionality are described in this chapter.
+\subsection{Functional Requirements}
+The functional requirements gathered for each function:
+\subsubsection{Data Aggregation and Processing}
+High priority feature that involves collecting real estate data from multiple sources, processing it, and storing it in a structured format for analysis.
+\begin{enumerate}
+    \item  The system shall aggregate data from predefined web sources using web scraping techniques.
+    \item The system shall provide an interface for manual data entry and corrections.
+    \item The system shall process and normalize data to a standard format before storage.
+\end{enumerate}
+
+\subsubsection{AI Model Development for Real Estate Valuation}
+Critical feature for developing and training AI models to predict real estate values based on historical and real-time data.
+\begin{enumerate}
+    \item The system shall allow for the training of AI models using collected real estate data.
+    \item The system shall continuously update AI models with new data to improve accuracy.
+    \item The system shall provide an interface for testing AI model predictions against known values.
+\end{enumerate}
+
+\subsubsection{User Interface for Rent Prediction}
+High priority feature that provides a user-friendly interface for accessing rent prediction functionalities.
+\begin{enumerate}
+    \item The system shall offer a web-based interface for users to input property details for rent prediction.
+    \item The system shall display rent prediction results in an easily understandable format.
+    \item The system shall allow users to adjust parameters and re-run predictions as needed.
+\end{enumerate}
+
+\subsection{Non-Functional Requirements}
+
+\subsubsection{Performance}
+\begin{itemize}
+    \item The system shall be capable of processing and responding to user queries within 2 seconds under normal operating conditions.
+\end{itemize}
+
+\subsubsection{Software Quality}
+\begin{itemize}
+    \item The system shall be reliable, maintainable, and scalable to accommodate an increasing amount of data and users.
+\end{itemize}
+
+\subsubsection{Business Rules}
+\begin{itemize}
+    \item The system shall adhere to business rules related to real estate valuation practices and regulatory compliance.
+\end{itemize}
+
+\subsection{Other Constraints}
+\begin{itemize}
+    \item The development process should adhere to Agile Scrum methodology principles.
+\end{itemize}
+\newpage
+
+\end{document}
